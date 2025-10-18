@@ -30,9 +30,8 @@
             border-bottom: 3px solid $color-secondary-dark;
         }
 
-        &::--webkit-input-placeholder {
+        &::-webkit-input-placeholder {
             color: $color-grey-dark-2;
-            font-weight: 100;
         }
     }
 
@@ -69,7 +68,7 @@
         font-size: $default-font-size;
         cursor: pointer;
         position: relative;
-        padding-left: 4.5rem;
+        padding-left: 4rem;
     }
 
     &__radio-button {
@@ -88,10 +87,7 @@
             height: 1.3rem;
             width: 1.3rem;
             border-radius: 50%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(0);
+            @include absCenter;
             background-color: $color-primary;
             opacity: 0;
             transition: opacity .2s;
@@ -99,7 +95,6 @@
     }
 
     &__radio-input:checked ~ &__radio-label &__radio-button::after {
-        transform: translate(-50%, -50%) scale(1);
         opacity: 1;
     }
 }
