@@ -473,7 +473,6 @@ body {
 .composition__photo {
   width: 55%;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  border-radius: 2px;
   position: absolute;
   z-index: 10;
   transition: all 0.2s;
@@ -1067,6 +1066,7 @@ body {
   transform: translate(-50%, -50%);
   list-style: none;
   text-align: center;
+  width: 100%;
 }
 .navigation__item {
   margin: 1rem;
@@ -1086,6 +1086,11 @@ body {
 .navigation__link:link span, .navigation__link:visited span {
   margin-right: 1.5rem;
   display: inline-block;
+}
+@media only screen and (max-width: 37.5em) {
+  .navigation__link:link, .navigation__link:visited {
+    font-size: 2.5rem;
+  }
 }
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
