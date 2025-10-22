@@ -6,7 +6,7 @@ This project focuses on clean design, smooth animations, and a fully responsive 
 ---
 
 ## 🌍 Live Site
-🔗 [Natours | Exciting tours for adventurous people](https://natours-forenoo.vercel.app/)
+🔗 [Natours | Exciting tours for adventurous people](https://natours-nugrah.vercel.app/)
 
 ---
 
